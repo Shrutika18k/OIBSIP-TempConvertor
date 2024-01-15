@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature convertor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="stylesheet" href="temp.css">
+</head>
+<body>
+<div class="container">
+    <div class="temp">
+        <h1>Temperature Convertor</h1>
+        <h2>Result:</h2>
+        <h3 class="celsius-value" id="celsius"></h3>
+        
+    </div>
+
+    <div class="main">
+        <div class="label">
+            <label for="degree"> ° C</label>
+            <input type="number" name="degree" id="degree" placeholder="0" required/>
+        </div>
+
+        <div class="temp-field">
+            <label for="temp-type">Type</label>
+            <select name="temp-type" id="temp-type">
+                <option value="#">select</option>
+                <option value="fahrenheit">fahrenheit</option>
+                <option value="kelvin">kelvin</option>
+            </select>
+        </div>
+    </div>
+    <div class="convert-btn">
+        <button id="convert-button" onclick="converter()">Convert</button>
+    </div>
+</div>
+<script src="e:\Oyasis Infobyte projects\tempcon.js"></script>
+    
+</body>
+</html>
